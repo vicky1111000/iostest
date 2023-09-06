@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Device Offline</title>
+  <style type="text/css"> 
+    
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: relative;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+  }
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  h1 {
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 1rem;
+    text-shadow: 0 0 3px white;
+  }
+  h4 {
+    color: #f1f1f1;
+    font-family: arial;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .button {
+    display: block;
+    margin: 20px 0 0;
+    padding: 15px 30px;
+    background: #22254C;
+    color: white;
+    font-family: arial;
+    letter-spacing: 5px;
+    border-radius: .4rem;
+    text-decoration: none;
+    box-shadow: 0 0 15px #22254C;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="logo">
+      <svg width="120" height="96" viewBox="0 0 120 96" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_5510_497)"><path d="M118.275 87.9562L7.27647 0.958312C6.45147 0.313687 5.47272 0 4.50522 0C3.17022 0 1.84459 0.592125 0.959779 1.72294C-0.575284 3.68062 -0.234596 6.51 1.72253 8.04187L112.554 94.8731C114.523 96.4112 117.348 96.0596 118.871 94.1085C120.581 92.325 120.225 89.4937 118.275 87.9562Z" fill="black"/><path opacity="0.4" d="M36 53.8313C32.6869 53.8313 30 56.5163 30 59.6625V89.4937C30 92.8069 32.6869 95.4937 36 95.4937C39.3131 95.4937 42 92.8069 42 89.4937V59.6625C42 56.6813 39.3187 53.8313 36 53.8313ZM54 90C54 93.3131 56.6869 96 60 96C63.3131 96 66 93.3131 66 90V69.8625L54 60.4575V90ZM12 71.8313C8.68687 71.8313 6 74.5163 6 77.6625V89.4937C6 92.8069 8.68687 95.4937 12 95.4937C15.3131 95.4937 18 92.8069 18 89.4937V77.6625C18 74.6813 15.3131 71.8313 12 71.8313ZM60 36C57.9937 36 56.325 37.0313 55.2375 38.55L66 46.9875V42C66 38.6812 63.3187 36 60 36ZM107.831 0C104.518 0 101.831 2.68687 101.831 6V75.2063L113.831 84.6113V6C113.831 2.68687 111.319 0 107.831 0ZM78 90C78 93.3131 80.6869 96 84 96C87.3131 96 90 93.3131 90 90V88.6684L78 79.2634V90ZM84 18C80.6869 18 78 20.6869 78 24V56.3813L90 65.7862V24C90 20.6812 87.3187 18 84 18Z" fill="black"/></g><defs><clipPath id="clip0_5510_497"><rect width="120" height="96" fill="white"/></clipPath></defs></svg>
+    </div>
+    <!-- <span>
+      <p>No internet connection<br/>Check your connection and try again</p>
+    </span> -->
+        <h1>OFFLINE</h1>
+    <h4>Please check your internet connection</h4>
+    
+    <button id="retryButton" type="button" onclick="gonative.webview.reload()">Retry</button>
+  </div>
+  <script>
+    var message = document.getElementById('message');
+    var retryButton = document.getElementById('retryButton')
+    if (['ko', 'ko-kr', 'ko-kp'].indexOf(navigator.language.toLowerCase()) > -1) {
+      // Korean
+      message.innerHTML = '<p>인터넷 연결이 끊겼습니다.<br/>연결하고 다시 시도하시길 바랍니다.</p>';
+      retryButton.innerText = '괜찮아';
+    }
+    function updateDarkMode(){
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+      else {
+        document.documentElement.setAttribute("data-theme", "light");
+      } 
+    }
+    updateDarkMode();
+    if(window.matchMedia){
+      window.matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', updateDarkMode);
+    }
+  </script>
+</body>
+</html>

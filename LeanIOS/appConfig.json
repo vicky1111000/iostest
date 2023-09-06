@@ -1,0 +1,380 @@
+{
+  "general": {
+    "screenOrientation": {
+      "iphone": null,
+      "ipad": null,
+      "androidPhone": null,
+      "androidTablet": null
+    },
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "nativeBridgeUrls": [],
+    "languages": [],
+    "userAgentAdd": "gonative",
+    "enableWindowOpen": true,
+    "forceUserAgent": "",
+    "publicKey": "oyqnym",
+    "deviceRegKey": "xc2c338jgahgw64z5mp5ke7my8",
+    "appName": "VT WoW",
+    "initialUrl": "https://hotstar.cogiho7445.repl.co/APP",
+    "iosBundleId": "co.median.ios.oyqnym",
+    "androidPackageName": "io.gonative.android.oyqnym",
+    "iosUserAgentAdd": "gonative",
+    "androidUserAgentAdd": "gonative",
+    "androidForceUserAgent": "",
+    "iosForceUserAgent": "",
+    "iosFullScreenWebview": false,
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {},
+    "version": 39
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [],
+      "tabMenus": [],
+      "active": false
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": true,
+          "items": [
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP#",
+              "label": "Home",
+              "subLinks": [],
+              "icon": "fas fa-house-chimney"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/voot",
+              "label": "Voot",
+              "subLinks": [],
+              "icon": "fas fa-v"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/biggboss",
+              "label": "Bigg boss",
+              "subLinks": [],
+              "icon": "fas fa-eye"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/play",
+              "label": "Tata play",
+              "subLinks": [],
+              "icon": "fas fa-play"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/sunnxt",
+              "label": "Sunnxt",
+              "subLinks": [],
+              "icon": "fas fa-sun"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/discovery",
+              "label": "Discovery",
+              "subLinks": [],
+              "icon": "fas fa-dog"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/sony-liv",
+              "label": "Sony liv",
+              "subLinks": [],
+              "icon": "fas fa-s"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/zee",
+              "label": "Zee5",
+              "subLinks": [],
+              "icon": "fas fa-z"
+            },
+            {
+              "url": "https://hotstar.cogiho7445.repl.co/APP/live/tv",
+              "label": "Live tv",
+              "subLinks": [],
+              "icon": "fas fa-satellite-dish"
+            },
+            {
+              "label": "Radio",
+              "url": "https://hotstar.cogiho7445.repl.co/APP/ott/radio",
+              "icon": "fas fa-radio",
+              "subLinks": []
+            },
+            {
+              "url": "https://t.me/vaathala1",
+              "label": "Telegram",
+              "subLinks": [],
+              "icon": "fas fa-location-arrow"
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "internal": false,
+          "label": "Non-web links",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "internal": false,
+          "label": "Facebook",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "internal": false,
+          "label": "Twitter",
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*"
+        },
+        {
+          "internal": false,
+          "label": "Instagram",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "internal": false,
+          "label": "Google Maps",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "internal": false,
+          "label": "Google Maps Search",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "internal": false,
+          "label": "LinkedIn",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "internal": true,
+          "label": "All Other Links",
+          "regex": ".*"
+        }
+      ],
+      "active": true
+    },
+    "androidPullToRefresh": true,
+    "iosPullToRefresh": true,
+    "navigationTitles": {
+      "titles": [],
+      "active": true
+    },
+    "ignorePageFinishedRegexes": [],
+    "actionConfig": {
+      "actions": [],
+      "actionSelection": [],
+      "active": true
+    },
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": {
+      "domains": [],
+      "enableAndroidApplinks": false
+    },
+    "navigationLevels": {
+      "levels": [],
+      "active": true
+    },
+    "toolbarNavigation": {
+      "enabled": true,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": false,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": false,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ],
+      "v2": true
+    },
+    "redirects": [],
+    "iosShowOfflinePage": true,
+    "iosConnectionOfflineTime": 10,
+    "androidShowOfflinePage": true,
+    "androidConnectionOfflineTime": 10,
+    "maxWindows": {
+      "enabled": false,
+      "numWindows": 5,
+      "autoClose": false
+    },
+    "iosOfflinePageHtml": "<html>\n<head>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\">\n  <title>Device Offline</title>\n  <style type=\"text/css\"> \n    \n  body {\n    width: 100%;\n    min-height: 100vh;\n    display: relative;\n    margin: 0;\n    padding: 0;\n    background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);\n  }\n  .wrapper {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    align-items: center;\n    justify-content: center;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    text-align: center;\n  }\n  h1 {\n    color: white;\n    font-family: arial;\n    font-weight: bold;\n    font-size: 50px;\n    letter-spacing: 5px;\n    line-height: 1rem;\n    text-shadow: 0 0 3px white;\n  }\n  h4 {\n    color: #f1f1f1;\n    font-family: arial;\n    font-weight: 300;\n    font-size: 16px;\n  }\n  .button {\n    display: block;\n    margin: 20px 0 0;\n    padding: 15px 30px;\n    background: #22254C;\n    color: white;\n    font-family: arial;\n    letter-spacing: 5px;\n    border-radius: .4rem;\n    text-decoration: none;\n    box-shadow: 0 0 15px #22254C;\n  }\n  </style>\n</head>\n<body>\n  <div class=\"wrapper\">\n    <div id=\"logo\">\n      <svg width=\"120\" height=\"96\" viewBox=\"0 0 120 96\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_5510_497)\"><path d=\"M118.275 87.9562L7.27647 0.958312C6.45147 0.313687 5.47272 0 4.50522 0C3.17022 0 1.84459 0.592125 0.959779 1.72294C-0.575284 3.68062 -0.234596 6.51 1.72253 8.04187L112.554 94.8731C114.523 96.4112 117.348 96.0596 118.871 94.1085C120.581 92.325 120.225 89.4937 118.275 87.9562Z\" fill=\"black\"/><path opacity=\"0.4\" d=\"M36 53.8313C32.6869 53.8313 30 56.5163 30 59.6625V89.4937C30 92.8069 32.6869 95.4937 36 95.4937C39.3131 95.4937 42 92.8069 42 89.4937V59.6625C42 56.6813 39.3187 53.8313 36 53.8313ZM54 90C54 93.3131 56.6869 96 60 96C63.3131 96 66 93.3131 66 90V69.8625L54 60.4575V90ZM12 71.8313C8.68687 71.8313 6 74.5163 6 77.6625V89.4937C6 92.8069 8.68687 95.4937 12 95.4937C15.3131 95.4937 18 92.8069 18 89.4937V77.6625C18 74.6813 15.3131 71.8313 12 71.8313ZM60 36C57.9937 36 56.325 37.0313 55.2375 38.55L66 46.9875V42C66 38.6812 63.3187 36 60 36ZM107.831 0C104.518 0 101.831 2.68687 101.831 6V75.2063L113.831 84.6113V6C113.831 2.68687 111.319 0 107.831 0ZM78 90C78 93.3131 80.6869 96 84 96C87.3131 96 90 93.3131 90 90V88.6684L78 79.2634V90ZM84 18C80.6869 18 78 20.6869 78 24V56.3813L90 65.7862V24C90 20.6812 87.3187 18 84 18Z\" fill=\"black\"/></g><defs><clipPath id=\"clip0_5510_497\"><rect width=\"120\" height=\"96\" fill=\"white\"/></clipPath></defs></svg>\n    </div>\n    <!-- <span>\n      <p>No internet connection<br/>Check your connection and try again</p>\n    </span> -->\n        <h1>OFFLINE</h1>\n    <h4>Please check your internet connection</h4>\n    \n    <button id=\"retryButton\" type=\"button\" onclick=\"gonative.webview.reload()\">Retry</button>\n  </div>\n  <script>\n    var message = document.getElementById('message');\n    var retryButton = document.getElementById('retryButton')\n    if (['ko', 'ko-kr', 'ko-kp'].indexOf(navigator.language.toLowerCase()) > -1) {\n      // Korean\n      message.innerHTML = '<p>인터넷 연결이 끊겼습니다.<br/>연결하고 다시 시도하시길 바랍니다.</p>';\n      retryButton.innerText = '괜찮아';\n    }\n    function updateDarkMode(){\n      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n        document.documentElement.setAttribute(\"data-theme\", \"dark\");\n      }\n      else {\n        document.documentElement.setAttribute(\"data-theme\", \"light\");\n      } \n    }\n    updateDarkMode();\n    if(window.matchMedia){\n      window.matchMedia('(prefers-color-scheme: dark)')\n        .addEventListener('change', updateDarkMode);\n    }\n  </script>\n</body>\n</html>",
+    "androidOfflinePageHtml": "",
+    "offlinePageHtml": "<html>\n<head>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\">\n  <title>Device Offline</title>\n  <style type=\"text/css\"> \n    \n  body {\n    width: 100%;\n    min-height: 100vh;\n    display: relative;\n    margin: 0;\n    padding: 0;\n    background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);\n  }\n  .wrapper {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    align-items: center;\n    justify-content: center;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    text-align: center;\n  }\n  h1 {\n    color: white;\n    font-family: arial;\n    font-weight: bold;\n    font-size: 50px;\n    letter-spacing: 5px;\n    line-height: 1rem;\n    text-shadow: 0 0 3px white;\n  }\n  h4 {\n    color: #f1f1f1;\n    font-family: arial;\n    font-weight: 300;\n    font-size: 16px;\n  }\n  .button {\n    display: block;\n    margin: 20px 0 0;\n    padding: 15px 30px;\n    background: #22254C;\n    color: white;\n    font-family: arial;\n    letter-spacing: 5px;\n    border-radius: .4rem;\n    text-decoration: none;\n    box-shadow: 0 0 15px #22254C;\n  }\n  </style>\n</head>\n<body>\n  <div class=\"wrapper\">\n    <div id=\"logo\">\n      <svg width=\"120\" height=\"96\" viewBox=\"0 0 120 96\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_5510_497)\"><path d=\"M118.275 87.9562L7.27647 0.958312C6.45147 0.313687 5.47272 0 4.50522 0C3.17022 0 1.84459 0.592125 0.959779 1.72294C-0.575284 3.68062 -0.234596 6.51 1.72253 8.04187L112.554 94.8731C114.523 96.4112 117.348 96.0596 118.871 94.1085C120.581 92.325 120.225 89.4937 118.275 87.9562Z\" fill=\"black\"/><path opacity=\"0.4\" d=\"M36 53.8313C32.6869 53.8313 30 56.5163 30 59.6625V89.4937C30 92.8069 32.6869 95.4937 36 95.4937C39.3131 95.4937 42 92.8069 42 89.4937V59.6625C42 56.6813 39.3187 53.8313 36 53.8313ZM54 90C54 93.3131 56.6869 96 60 96C63.3131 96 66 93.3131 66 90V69.8625L54 60.4575V90ZM12 71.8313C8.68687 71.8313 6 74.5163 6 77.6625V89.4937C6 92.8069 8.68687 95.4937 12 95.4937C15.3131 95.4937 18 92.8069 18 89.4937V77.6625C18 74.6813 15.3131 71.8313 12 71.8313ZM60 36C57.9937 36 56.325 37.0313 55.2375 38.55L66 46.9875V42C66 38.6812 63.3187 36 60 36ZM107.831 0C104.518 0 101.831 2.68687 101.831 6V75.2063L113.831 84.6113V6C113.831 2.68687 111.319 0 107.831 0ZM78 90C78 93.3131 80.6869 96 84 96C87.3131 96 90 93.3131 90 90V88.6684L78 79.2634V90ZM84 18C80.6869 18 78 20.6869 78 24V56.3813L90 65.7862V24C90 20.6812 87.3187 18 84 18Z\" fill=\"black\"/></g><defs><clipPath id=\"clip0_5510_497\"><rect width=\"120\" height=\"96\" fill=\"white\"/></clipPath></defs></svg>\n    </div>\n    <!-- <span>\n      <p>No internet connection<br/>Check your connection and try again</p>\n    </span> -->\n        <h1>OFFLINE</h1>\n    <h4>Please check your internet connection</h4>\n    \n    <button id=\"retryButton\" type=\"button\" onclick=\"gonative.webview.reload()\">Retry</button>\n  </div>\n  <script>\n    var message = document.getElementById('message');\n    var retryButton = document.getElementById('retryButton')\n    if (['ko', 'ko-kr', 'ko-kp'].indexOf(navigator.language.toLowerCase()) > -1) {\n      // Korean\n      message.innerHTML = '<p>인터넷 연결이 끊겼습니다.<br/>연결하고 다시 시도하시길 바랍니다.</p>';\n      retryButton.innerText = '괜찮아';\n    }\n    function updateDarkMode(){\n      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n        document.documentElement.setAttribute(\"data-theme\", \"dark\");\n      }\n      else {\n        document.documentElement.setAttribute(\"data-theme\", \"light\");\n      } \n    }\n    updateDarkMode();\n    if(window.matchMedia){\n      window.matchMedia('(prefers-color-scheme: dark)')\n        .addEventListener('change', updateDarkMode);\n    }\n  </script>\n</body>\n</html>",
+    "iosSettings": {},
+    "swipeGestures": true
+  },
+  "styling": {
+    "iosLaunchScreen": {
+      "backgroundColor": "#000000",
+      "backgroundColorDark": "#000000",
+      "backgroundImage": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159560_nn05vw5djpawc_000000_1_2x2.png",
+      "backgroundImageDark": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159584_9c4ec8zynk6w2_000000_1_2x2.png",
+      "centerImage": "https://gonativeio.s3.amazonaws.com/uploads/1qeuwzjmrd1je_1693206866377.jpeg",
+      "centerImageDark": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png"
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "androidShowSplash": true,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "iosDarkMode": "auto",
+    "iosTitleColor": "#333333",
+    "iosTitleColorDark": "#adc5dc",
+    "iosTintColor": "#007aff",
+    "iosTintColorDark": "#adc5dc",
+    "iosSidebarTextColor": "#ADC5DC",
+    "iosSidebarTextColorDark": "#adc5dc",
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "iosEnableBlurInStatusBar": false,
+    "iosSidebarBackgroundColor": "#333333",
+    "iosSidebarBackgroundColorDark": "#333333",
+    "iosNavigationBarTintColor": "#f8f8f8",
+    "iosNavigationBarTintColorDark": "#333333",
+    "iosTabBarTintColor": "#f8f8f8",
+    "iosTabBarTintColorDark": "#333333",
+    "icon": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png",
+    "iosHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png",
+    "showActionBar": true,
+    "showNavigationBar": true,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "auto",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#1E496E",
+    "androidActionBarBackgroundColor": "#FFFFFF",
+    "androidActionBarForegroundColor": "#1E496E",
+    "androidPullToRefreshColor": "#1E496E",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarHighlightColor": "#1E496E",
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarIndicatorColor": "#1E496E",
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "androidAccentColorDark": "#80cbc4",
+    "androidBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "androidSplashBackgroundColor": "#000000",
+    "androidSplashBackgroundColorDark": "#000000",
+    "androidWebviewTextZoom": null,
+    "iosIcon": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png",
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "androidIcon": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png",
+    "navigationTitleImageLocation": "assets/defaults/logo1_white_padded.png",
+    "navigationTitleImageLocationDark": "assets/defaults/logo1_white_padded.png",
+    "androidHeaderImage": "assets/defaults/logo1_white_padded.png",
+    "androidHeaderImageDark": "assets/defaults/logo1_white_padded.png",
+    "iosHeaderImageDark": "https://gonativeio.s3.amazonaws.com/uploads/cuqz7t2n2xg7c_1693206800010.png",
+    "androidLaunchImages": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159795_8q4fada39j5kr_180x180.9.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159814_p2c4q54z74mwa_270x270.9.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159843_0myjux9tjcwfg_360x360.9.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159880_26kcjye719gh0_540x540.9.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159943_7bfgaznpwfgm6_720x720.9.png"
+    },
+    "androidLaunchImagesDark": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207159983_azngnr0v95f58_180x180.9.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207160042_txjb873c6xxrg_270x270.9.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207160065_yt3c943r6puja_360x360.9.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207160102_ph3gcgfdfpvup_540x540.9.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1693207160186_9hgcdej84xhuw_720x720.9.png"
+    },
+    "pinchToZoom": true,
+    "customCSS": ".topbar{\r\n     visibility: hidden;\r\n}"
+  },
+  "permissions": {
+    "usesGeolocation": false,
+    "androidDownloadToPublicStorage": true,
+    "enableWebRTC": false,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "enableWebRTCamera": true,
+    "enableWebRTCMicrophone": true,
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignal": {
+      "active": false
+    }
+  },
+  "allowZoom": true,
+  "script": {}
+}
